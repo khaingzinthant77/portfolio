@@ -17,10 +17,11 @@
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#experience">Experience & Skills</a></li>
-        <li><a href="">My Projects</a></li>
+        <li><a href="#myproject">My Projects</a></li>
     </ul>
     <div></div>
 </nav>
+
 
   <!-- Main Content -->
   <section id="home">
@@ -28,8 +29,10 @@
         <div style="width: 50%;">
             <h1 class="text_color animated-text">Hi! MY NAME IS</h1>
             <h2 style="color: #007bff;" class="animated-text">KHAING ZIN THANT</h2>
-            <p class="text_color animated-text">I'm a web developer.I can be invloved in your project as you need me from the seed of an idea to creative design.</p>
-            <div style="margin-top: 15%;" class="animated-text-Y">
+            <p class="text_color animated-text">I'm a web developer specializing in HTML,CSS,Javascript and React.I can be invloved in your project as you need me from the seed of an idea to creative design.If you're looking for someone to bring your project to life, I'm your person. Let's create something amazing together.
+            </p>
+            <p class="text_color" style="margin-top: 3%;font-weight: bold;font-size: 20px;">Hire Me</p>
+            <div style="margin-top: 10%;" class="animated-text-Y">
                 <h3 class="text_color">Contact</h3>
                 <div style="display: flex;justify-content: space-between;width: 30%;margin-top: 5%;">
                     <a href="https://www.facebook.com/khaing.thant.9421" target="_blank"><i class="fab fa-facebook icon"></i></a>
@@ -58,7 +61,7 @@
        
           <div class="" style="flex-direction: column;">
             <div class="mb-1">
-              <a href="" class="underline_none"><i class="fas fa-user personal-icon"></i>&nbsp;&nbsp;26 years</a>
+              <a href="" class="underline_none"><i class="fas fa-user personal-icon"></i>&nbsp;&nbsp;<span id="age-display" data-birthdate="1998-12-10"></span> years</a>
             </div>
             <div class="mb-1">
               <a href="" class="underline_none"><i class="fas fa-phone personal-icon" ></i>&nbsp;&nbsp;09975446527</a>
@@ -149,14 +152,6 @@
               <i class="fab fa-github icon lang_img" style="font-size: 40px;"></i>
               <div class="tooltip">Github</div>
           </div>
-            
-            
-            
-           
-            
-            
-            
-           
           </div>
         </div>
     </div>
@@ -164,6 +159,61 @@
       <img src="./images/experience.png" alt="" style="width: 100%;height: 400px;object-fit: contain;">
   </div>
   </div>
+  </section>
+
+  <section id="myproject" style="display: none;">
+    <div>
+      <h2 class="text_color" style="text-align: center;">My Projects</h2>
+      <div class="container">
+        <div class="card">
+            <img src="./images/transport.png" alt="" class="image">
+            <div class="pj-content">
+                <h4 class="text_color">Transportation Management</h4>
+                <p class="text_color" style="font-size: 10px;">
+                    Transportation Management is allow drivers to log their pickups, deliveries, and routes. The portal provides real-time tracking of each delivery, ensuring that the goods are picked up, in transit, and delivered accurately. Users can trace the entire journey of the goods from the starting point to the final destination.
+                </p>
+                <div style="display: flex;justify-content: space-between;margin-top: 20px;">
+                  <div style="display: flex;justify-content: space-between;">
+                    <span style="background-color: #05051b;padding: 5px;color: white;border-radius: 5px;">Laravel</span> &nbsp;
+                    <span style="background-color: #05051b;padding: 5px;color: white;border-radius: 5px;">PHP</span>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/warranty.png" alt="" class="image">
+            <div class="pj-content">
+                <h4 class="text_color">Warranty Management</h4>
+                <p class="text_color" style="font-size: 10px;">
+                  Apple warranty management provides a card with a QR code for easy registration and tracking of warranty expiration. Simply scan the QR code using the provided portal to check the warranty expiration date
+                </p>
+                <div style="display: flex;justify-content: space-between;margin-top: 40px;">
+                  <div style="display: flex;justify-content: space-between;">
+                    <span style="background-color: #05051b;padding: 5px;color: white;border-radius: 5px;">Laravel</span> &nbsp;
+                    <span style="background-color: #05051b;padding: 5px;color: white;border-radius: 5px;">PHP</span>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/hotspot.png" alt="" class="image">
+            <div class="pj-content">
+                <h4 class="text_color">Hotspot Reseller</h4>
+                <p class="text_color" style="font-size: 10px;">
+                  Hotspot Reseller app is a portal designed for resellers to top up accounts, enabling users to access Wi-Fi services. Through this portal, Internet Service Providers (ISPs) provide top-ups, which resellers can then distribute to customers for Wi-Fi usage.
+                </p>
+                <div style="display: flex;justify-content: space-between;margin-top: 20px;">
+                  <div style="display: flex;justify-content: space-between;">
+                    <span style="background-color: #05051b;padding: 5px;color: white;border-radius: 5px;">Laravel</span> &nbsp;
+                    <span style="background-color: #05051b;padding: 5px;color: white;border-radius: 5px;">PHP</span>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+      
+    </div>
   </section>
 
   <!-- Footer -->

@@ -1,4 +1,24 @@
+function calculateAge(birthdate) {
+  const birthDate = new Date(birthdate);
+  const today = new Date();
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDiff = today.getMonth() - birthDate.getMonth();
+  const dayDiff = today.getDate() - birthDate.getDate();
+
+  // Adjust age if the current date is before the birthdate in the current year
+  if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+    age--;
+  }
+
+  return age;
+}
+
 document.addEventListener("DOMContentLoaded", function () {
+  const ageDisplayElement = document.getElementById("age-display");
+  const birthdate = ageDisplayElement.getAttribute("data-birthdate");
+  const age = calculateAge(birthdate);
+  ageDisplayElement.textContent = age;
+
   const navLinks = document.querySelectorAll("nav a");
   const sections = document.querySelectorAll("section");
 
